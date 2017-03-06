@@ -49,6 +49,8 @@
             </a>
             {% if SHOW_FULL_ARTICLE %}
                 {{ article.content }}
+            {% elif article.show_full_article %}
+                {{ article.content }}
             {% else %}
                 <p class="article-summary">
                 {% if article.has_summary %}
