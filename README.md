@@ -110,6 +110,23 @@ Accept many analytics:
  - Gauges: ``GAUGES``
  - Piwik: ``PIWIK_URL`` and ``PIWIK_SITE_ID``.
 
+### Favicon
+
+To define if using a favicon and format:
+
+```python
+FAVICON = 'favicon.ico'
+```
+
+**WARNING:** Is necessary static_paths configured:
+
+```python
+STATIC_PATHS = ['images', 'extra/favicon.ico']
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
+```
+
 ### Other configuration
 
  - If ``ADDTHIS_PUBID`` is defined sharing buttons from AddThis will appear
@@ -205,3 +222,4 @@ Headline: Resume of article
 This is the content of my super blog post.
 ```
 
+Test
