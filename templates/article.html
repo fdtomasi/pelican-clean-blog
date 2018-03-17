@@ -128,14 +128,14 @@
     <!-- Post Content -->
     <article>
      {% if article.photo_image %}<img src="{{ SITEURL }}/{{ article.photo_image[1] }}" />{% endif %}
-         
+
      {{ article.content }}
     </article>
-    
 
-{% if article.photo_gallery %}
+
+<!-- {% if article.photo_gallery %} -->
 <!-- <div class="gallery"> -->
-<div class="popup-gallery">
+<!-- <div class="popup-gallery">
 		{% for title, gallery in article.photo_gallery %}
 			<h1>{{ title }}</h1>
 				{% for name, photo, thumb, exif, caption in gallery %}
@@ -143,7 +143,7 @@
 				{% endfor %}
 		{% endfor %}
 </div>
-{% endif %}
+{% endif %} -->
 
 
 
@@ -207,5 +207,5 @@
             <noscript>Please enable JavaScript to view the comments.</noscript>
         </div>
     {% endif %}
-    
+
 {% endblock content %}
